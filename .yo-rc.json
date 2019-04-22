@@ -1,0 +1,35 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.alberto.myapp"
+        },
+        "jhipsterVersion": "5.8.1",
+        "applicationType": "monolith",
+        "baseName": "segundoparcialproyecto",
+        "packageName": "com.alberto.myapp",
+        "packageFolder": "com/alberto/myapp",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "ehcache",
+        "enableHibernateCache": false,
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "postgresql",
+        "prodDatabaseType": "postgresql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "ZjljNTg0NTQzNjZhYTg2ODRjYWY3ZTE2N2VhNjBhZDkwMGMzYTEyODk1ZGJlYjU1OGI3ZTY4ZjcxZWQ4MzMwZWI0MmVhODhiYmZlYjIxODI5YjU5MTczZTk5Yzg4ZDc5YjZkMTc5OTM2ZWE5NWE4MTY0OGIwM2YyMWE4NjcxZGM=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": false
+    }
+}
