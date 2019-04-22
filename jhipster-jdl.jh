@@ -1,0 +1,77 @@
+
+
+entity Period {
+startDate Instant,
+endDate Instant,
+name String
+}
+
+entity Project {
+name String,
+numStudent Integer,
+schedule String,
+status String
+}
+
+entity Team {
+name String,
+status String
+}
+
+entity Sprint {
+name String,
+endDate Instant,
+startDate Instant,
+status String
+}
+
+entity Student {
+name String,
+lastName String,
+role String,
+status String
+}
+
+entity Story {
+code String,
+name String,
+description String,
+status String
+}
+
+entity Review {
+timestamp Instant,
+comment String,
+status String
+}
+
+relationship OneToMany {
+Period {project(name)} to Project
+}
+
+relationship OneToMany {
+Project {team(name)} to Team
+}
+
+relationship OneToMany {
+Team {sprint(name)} to Sprint
+}
+
+relationship OneToMany {
+Sprint {story(name)} to Story
+}
+
+relationship OneToMany {
+Story {student(name)} to Student
+}
+
+relationship OneToMany {
+Team {student(name)} to Student
+}
+
+relationship OneToMany {
+Story {story(name)} to Review
+}
+
+
+
